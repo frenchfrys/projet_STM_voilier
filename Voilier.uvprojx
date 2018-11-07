@@ -386,6 +386,11 @@
               <FileType>1</FileType>
               <FilePath>.\src\main.c</FilePath>
             </File>
+            <File>
+              <FileName>accelerometre.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\accelerometre.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

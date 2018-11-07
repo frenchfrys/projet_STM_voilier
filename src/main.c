@@ -1,6 +1,6 @@
 #include "stm32f10x.h"
 
-int main (void)
+/*int main (void)
 {
   
   // boucle de traitement
@@ -10,4 +10,4 @@ int main (void)
 			
     }
 
-}
+}*/
