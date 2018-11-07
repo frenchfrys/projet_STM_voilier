@@ -1,13 +1,11 @@
-#include "stm32f10x.h"
 
-int main (void)
+#include "stm32f1xx_hal.h"
+#include "gpio.h"
+#include "girouette.h"
+
+int main(void)
 {
-  
-  // boucle de traitement
-  while(1)
-    {
-      
-			
-    }
-
+	encoder_interface_mode();
+	
+	
 }
