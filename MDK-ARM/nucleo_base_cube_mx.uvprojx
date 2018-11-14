@@ -10,7 +10,7 @@
       <TargetName>Simu_nucleo_base_cube_mx</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -640,6 +640,21 @@
               <FileName>stm32f1xx_ll_usb.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>girouette</GroupName>
+          <Files>
+            <File>
+              <FileName>girouette.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1281,6 +1296,21 @@
               <FileName>stm32f1xx_ll_usb.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>girouette</GroupName>
+          <Files>
+            <File>
+              <FileName>girouette.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.h</FilePath>
             </File>
           </Files>
         </Group>
