@@ -29,25 +29,27 @@ void configure_ADC_in11() { //CONFIGURATION ADC1
 
 
 void set_watchdog_ADC() {
-	ADC1->CR1->						/////p.238 awden
-	ADC1->HTR = 2.37;							//high threshold register
-	ADC1->LTR = 1.89;							//low threshold register
+	ADC1->CR1 |= ADC_CR1_AWDIE;		//watchdog enabled
+	ADC1->CR1 |= ADC_CR1_AWDEN;		//watchdog enabled on regular channels
+	ADC1->CR1 &= ~ADC_CR1_JAWDEN;	//watchdog disabled on injected channels
+	ADC1->CR1 |= ADC_CR1_AWDSGL;	//watchdog enabled on a single channel
+	ADC1->CR1 &= ~ADC_CR1_AWDCH;	//selection de channel 11 pour le watchdog
+	ADC1->CR1 |= 0xB;
+	
+	ADC1->HTR = 0xB7D;							//high threshold register
+	ADC1->LTR = 0x929;							//low threshold register
 	
 }
 
-int convert_single() {
+void conversion_on() {
 	
+	ADC1->CR2 |=ADC_CR2_CONT;								//en mode continu
 	ADC1->CR2 |=ADC_CR2_ADON;								//lancement de la conversion
-	if (ADC1->SR & ADC_SR_AWD) {						//si analog watchdog event occurred
-	
-	}
 	
 	/*while(!(ADC1->SR & ADC_SR_EOC) ) {}			//attente fin de conversion
 	ADC1->SR &= ~ADC_SR_EOC;								//validation de la conversion
 	return ADC1->DR & ~((0x0F) << 12); 			//retour de la conversion		*/
 }
-
-
 
 
 int main (void)
@@ -56,11 +58,13 @@ int main (void)
 	configure_GPIO_PC1_analog_input();
 	configure_ADC_in11();
 	set_watchdog_ADC();
-	convert_single();
+	conversion_on();
 	
 	// boucle de traitement
-  while(1)
-    {
+  while(1) {
+    if (ADC1->SR & ADC_SR_AWD) {						//si analog watchdog event occurred
+			ADC1->SR &= ~ADC_SR_AWD;							//on le remet a 0
+		}
 			
     }
 
