@@ -27,4 +27,8 @@ nucleo_base_cube_mx\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_fl
 nucleo_base_cube_mx\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 nucleo_base_cube_mx\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 nucleo_base_cube_mx\main.o: ../Inc/gpio.h
+<<<<<<< HEAD
 nucleo_base_cube_mx\main.o: ../Inc/girouette.h
+=======
+nucleo_base_cube_mx\main.o: ../Src/girouette.h
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 nucleo_base_cube_mx\girouette.o: ..\Src\girouette.c
+=======
+nucleo_base_cube_mx\girouette.o: U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.c
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
 nucleo_base_cube_mx\girouette.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 nucleo_base_cube_mx\girouette.o: ../Inc/stm32f1xx_hal_conf.h
 nucleo_base_cube_mx\girouette.o: ../Inc/main.h
@@ -26,5 +30,9 @@ nucleo_base_cube_mx\girouette.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_h
 nucleo_base_cube_mx\girouette.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 nucleo_base_cube_mx\girouette.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 nucleo_base_cube_mx\girouette.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+<<<<<<< HEAD
 nucleo_base_cube_mx\girouette.o: ../Inc/girouette.h
 nucleo_base_cube_mx\girouette.o: ../Inc/gpio.h
+=======
+nucleo_base_cube_mx\girouette.o: U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.h
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350

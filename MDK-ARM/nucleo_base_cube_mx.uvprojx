@@ -311,7 +311,11 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
+<<<<<<< HEAD
             <Optim>1</Optim>
+=======
+            <Optim>4</Optim>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -649,7 +653,16 @@
             <File>
               <FileName>girouette.c</FileName>
               <FileType>1</FileType>
+<<<<<<< HEAD
               <FilePath>..\Src\girouette.c</FilePath>
+=======
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.h</FilePath>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
             </File>
           </Files>
         </Group>
@@ -1300,7 +1313,16 @@
             <File>
               <FileName>girouette.c</FileName>
               <FileType>1</FileType>
+<<<<<<< HEAD
               <FilePath>..\Src\girouette.c</FilePath>
+=======
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.h</FilePath>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
             </File>
           </Files>
         </Group>

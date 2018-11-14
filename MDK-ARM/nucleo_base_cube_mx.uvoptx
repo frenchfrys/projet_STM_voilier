@@ -125,7 +125,11 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGDARM</Key>
+<<<<<<< HEAD
           <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=-1,-1,-1,-1,0)(120=1233,110,1654,537,1)(121=-1,-1,-1,-1,0)(122=1057,211,1615,734,0)(123=-1,-1,-1,-1,0)(140=-1,-1,-1,-1,0)(240=-1,-1,-1,-1,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=1082,143,1676,894,0)(133=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(211=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(221=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(234=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)</Name>
+=======
+          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=-1,-1,-1,-1,0)(120=-1,-1,-1,-1,0)(121=-1,-1,-1,-1,0)(122=1057,211,1615,734,0)(123=-1,-1,-1,-1,0)(140=-1,-1,-1,-1,0)(240=-1,-1,-1,-1,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(133=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(211=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(221=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(234=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)</Name>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -147,6 +151,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>44</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134219110</Address>
@@ -230,6 +235,11 @@
           <LineNumber>78</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134218058</Address>
+=======
+          <LineNumber>78</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134218056</Address>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -240,6 +250,7 @@
           <ExecCommand></ExecCommand>
           <Expression>\\nucleo_base_cube_mx\../Src/stm32f1xx_it.c\78</Expression>
         </Bp>
+<<<<<<< HEAD
         <Bp>
           <Number>6</Number>
           <Type>0</Type>
@@ -312,6 +323,9 @@
           <ItemText>GPIO_PA7_TIM3CH2</ItemText>
         </Ww>
       </WatchWindow1>
+=======
+      </Breakpoint>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -470,6 +484,7 @@
           <Name>-U-O142 -O2254 -S0 -C0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_128 -FS08000000 -FL020000 -FP0($$Device:STM32F103RB$Flash\STM32F10x_128.FLM)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
+<<<<<<< HEAD
       <Breakpoint>
         <Bp>
           <Number>0</Number>
@@ -552,6 +567,9 @@
           <Expression></Expression>
         </Bp>
       </Breakpoint>
+=======
+      <Breakpoint/>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -649,7 +667,11 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
+<<<<<<< HEAD
       <tvExp>0</tvExp>
+=======
+      <tvExp>1</tvExp>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>../Src/main.c</PathWithFileName>
@@ -1236,11 +1258,30 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
+<<<<<<< HEAD
       <PathWithFileName>..\Src\girouette.c</PathWithFileName>
+=======
+      <PathWithFileName>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.c</PathWithFileName>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
       <FilenameWithoutPath>girouette.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+<<<<<<< HEAD
+=======
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>51</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>U:\4A\Periph\Projet_voilier\tv_voilier\Src\girouette.h</PathWithFileName>
+      <FilenameWithoutPath>girouette.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+>>>>>>> 185686d99e5e1cd0006b060c33f7cb83fa893350
   </Group>
 
   <Group>
