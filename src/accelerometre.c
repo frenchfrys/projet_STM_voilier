@@ -52,19 +52,44 @@ void conversion_on() {
 }
 
 
+void configuration_interruption_ADC()  {
+	NVIC->IP[18] = 2<<4;			//le numéro de l'interruption de l'ADC est 18
+														//Priorité 2, il faut la mettre dans les bits de poids fort de l'octet IP
+	
+	NVIC->ISER[0] |= 1<<18;		//Autorisation de recevoir la demande d'interruption côté NVIC
+														//On met à 1 le bit correspondant au numero d'interruption (18) du vecteur ISER (set-enable register) de NVIC
+	
+}
+
+
+void ADC1_2_IRQHandler(void) {
+	NVIC->ICER[0] |= 1<<18;								//on disable l'autorisation de recevoir la demande d'interruption côté NVIC
+	
+																				//traitement a faire
+	if (ADC1->DR > 0xAFF) {								//trop incline a gauche
+		while (ADC1->DR > 0xB20) {}					//on attend qu'il revient a position normale
+	}
+	else {																//trop incline a droite
+		while (ADC1->DR < 0x950) {}					//on attend qu'il revient a position normale
+	}
+	NVIC->ISER[0] |= 1<<18;								//on enable a nouveau l'autorisation de recevoir la demande d'interruption côté NVIC
+	ADC1->SR &= ~ADC_SR_AWD;							//on remet le bit d'interruption a 0	
+}
+
 int main (void)
 {	
 	//Configuration de l'ADC
 	configure_GPIO_PC1_analog_input();
 	configure_ADC_in11();
 	set_watchdog_ADC();
+	configuration_interruption_ADC();
 	conversion_on();
 	
 	// boucle de traitement
   while(1) {
-    if (ADC1->SR & ADC_SR_AWD) {						//si analog watchdog event occurred
-			ADC1->SR &= ~ADC_SR_AWD;							//on le remet a 0
-		}
+//    if (ADC1->SR & ADC_SR_AWD) {						//si analog watchdog event occurred
+//			ADC1->SR &= ~ADC_SR_AWD;							//on le remet a 0
+//		}
 			
     }
 
