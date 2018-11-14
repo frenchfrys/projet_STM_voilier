@@ -36,8 +36,8 @@ void set_watchdog_ADC() {
 	ADC1->CR1 &= ~ADC_CR1_AWDCH;	//selection de channel 11 pour le watchdog
 	ADC1->CR1 |= 0xB;
 	
-	ADC1->HTR = 0xB7D;							//high threshold register
-	ADC1->LTR = 0x929;							//low threshold register
+	ADC1->HTR = 0xFFF;							//high threshold register
+	ADC1->LTR = 0x5C0;					//low threshold register
 	
 }
 
@@ -64,14 +64,17 @@ void configuration_interruption_ADC()  {
 
 void ADC1_2_IRQHandler(void) {
 	NVIC->ICER[0] |= 1<<18;								//on disable l'autorisation de recevoir la demande d'interruption côté NVIC
+																				
+	while (ADC1->DR < 0x620) {						//traitement a faire
+																				//on attend qu'il revient en position normale
+	/*
+		il faut relacher le servo de la voile
+		*/
 	
-																				//traitement a faire
-	if (ADC1->DR > 0xAFF) {								//trop incline a gauche
-		while (ADC1->DR > 0xB20) {}					//on attend qu'il revient a position normale
-	}
-	else {																//trop incline a droite
-		while (ADC1->DR < 0x950) {}					//on attend qu'il revient a position normale
-	}
+	
+	}					
+
+	ADC1->SR &= ~ADC_SR_AWD;							//on remet le bit d'interruption a 0	
 	NVIC->ISER[0] |= 1<<18;								//on enable a nouveau l'autorisation de recevoir la demande d'interruption côté NVIC
 	ADC1->SR &= ~ADC_SR_AWD;							//on remet le bit d'interruption a 0	
 }
