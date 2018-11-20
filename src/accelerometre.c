@@ -79,21 +79,4 @@ void ADC1_2_IRQHandler(void) {
 	ADC1->SR &= ~ADC_SR_AWD;							//on remet le bit d'interruption a 0	
 }
 
-int main (void)
-{	
-	//Configuration de l'ADC
-	configure_GPIO_PC1_analog_input();
-	configure_ADC_in11();
-	set_watchdog_ADC();
-	configuration_interruption_ADC();
-	conversion_on();
-	
-	// boucle de traitement
-  while(1) {
-//    if (ADC1->SR & ADC_SR_AWD) {						//si analog watchdog event occurred
-//			ADC1->SR &= ~ADC_SR_AWD;							//on le remet a 0
-//		}
-			
-    }
 
-}
