@@ -382,14 +382,14 @@
           <GroupName>source</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\main.c</FilePath>
-            </File>
-            <File>
               <FileName>accelerometre.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\accelerometre.c</FilePath>
+            </File>
+            <File>
+              <FileName>servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\servo.c</FilePath>
             </File>
           </Files>
         </Group>
