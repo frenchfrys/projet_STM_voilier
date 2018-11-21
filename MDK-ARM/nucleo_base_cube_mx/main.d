@@ -29,3 +29,4 @@ nucleo_base_cube_mx\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pw
 nucleo_base_cube_mx\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 nucleo_base_cube_mx\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 nucleo_base_cube_mx\main.o: ../Inc/gpio.h
+nucleo_base_cube_mx\main.o: ../Inc/direction_bateau.h

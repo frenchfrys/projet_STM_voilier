@@ -41,6 +41,13 @@
 
 /* External variables --------------------------------------------------------*/
 
+// 	variables pour le déplacement du bateau
+extern TIM_HandleTypeDef htim4;
+extern TIM_HandleTypeDef htim2;
+
+extern float etat_haut_entree;
+extern float periode_entree;
+
 /******************************************************************************/
 /*            Cortex-M3 Processor Interruption and Exception Handlers         */ 
 /******************************************************************************/
@@ -83,5 +90,35 @@ void EXTI15_10_IRQHandler(void)
 
 /* USER CODE BEGIN 1 */
 
+void TIM2_IRQHandler (void)
+{
+	/* USER CODE BEGIN TIM2_IRQn 0 */
+
+	/* USER CODE END TIM2_IRQn 0 */
+	HAL_TIM_IRQHandler(&htim2);
+	/* USER CODE BEGIN TIM2_IRQn 1 */
+
+  /* USER CODE END TIM2_IRQn 1 */
+}
+
+void TIM4_IRQHandler (void)
+{
+	/* USER CODE BEGIN TIM4_IRQn 0 */
+	 
+	/* USER CODE END TIM4_IRQn 0 */
+	HAL_TIM_IRQHandler(&htim4);
+	/* USER CODE BEGIN TIM4_IRQn 1 */
+
+  /* USER CODE END TIM4_IRQn 1 */
+}
+
+void HAL_TIM_IC_CaptureCallback( TIM_HandleTypeDef *htim )
+{
+	// lors d'une interruption type : front montant (channel 1 prend la valeur du compteur de TIM4, et compteur TIM4 --> 0) 
+	// ou front descendant (channel 2 prend la valeur du compteur de TIM4, et compteur TIM4 garde sa valeur), on récupère la durée d'état haut ainsi que la période.
+	// à T = 0, la valeur d'état haut n'est pas vrai, mais elle le devient à la prochaine période, ce n'est pas si grave (50 Hz : 50 périodes par seconde). 
+	periode_entree = HAL_TIM_ReadCapturedValue(&htim4, TIM_CHANNEL_1);		
+  etat_haut_entree = HAL_TIM_ReadCapturedValue(&htim4, TIM_CHANNEL_2);
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

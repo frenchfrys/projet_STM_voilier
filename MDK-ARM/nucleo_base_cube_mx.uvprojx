@@ -400,6 +400,11 @@
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
             </File>
+            <File>
+              <FileName>direction_bateau.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\direction_bateau.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1039,6 +1044,11 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>direction_bateau.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\direction_bateau.c</FilePath>
             </File>
           </Files>
         </Group>

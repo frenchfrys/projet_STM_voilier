@@ -40,6 +40,11 @@
 #include "stm32f1xx_hal.h"
 #include "gpio.h"
 
+#include "direction_bateau.h"	
+
+
+
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -91,6 +96,13 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 
+	direction_enable_clock();
+	direction_config_ports();
+	direction_config_timers();
+	direction_start_timers_IT();
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -98,6 +110,7 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
+			direction_traitement_donnees();
 
   /* USER CODE BEGIN 3 */
 
